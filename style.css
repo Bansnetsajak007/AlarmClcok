@@ -21,16 +21,15 @@ body {
 }
 
 #time {
-    font-size: 80px;
+    font-size: 5vw; /* Responsive font size */
     margin-bottom: 20px;
 }
 
 .alarm {
-
     margin-top: 30px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column; /* Adjusted for responsiveness */
+    align-items: center; /* Center elements vertically */
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -43,32 +42,28 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-
-#hrs,
-#mis {
-    font-size: 24px;
-    margin: 0 5px;
+#setAlarmAt,
+#period {
+    font-size: 3vw; /* Responsive font size */
 }
 
-#period{
-    font-size: 37px;
+#ringtone {
+    font-size: 3vw; /* Responsive font size */
+    width: 100%; /* Ensure the select element takes up the entire width */
+    padding: 10px; /* Add some padding for better spacing */
 }
 
 #set {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: 2vw 4vw; /* Responsive padding */
+    font-size: 2vw; /* Responsive font size */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     background: linear-gradient(to right, #FF6B6B, #FF8E53);
     color: white;
     transition: transform 0.2s ease-in-out;
-    margin-left: 35px;
-}
-
-#setAlarmAt{
-    font-size: 30px;
+    margin-top: 20px; /* Adjusted margin for better spacing */
 }
 
 #set:hover {
@@ -78,7 +73,7 @@ body {
 .alarm-details {
     margin-top: 25px;
     flex: 1;
-    padding: 20px;
+    padding: 3vw; /* Responsive padding */
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -93,9 +88,9 @@ body {
         font-size: 3rem;
     }
     
-    #hrs,
-    #mis,
-    #period {
+    #setAlarmAt,
+    #period,
+    #ringtone {
         font-size: 1.2rem;
     }
     
@@ -107,6 +102,3 @@ body {
         padding: 10px;
     }
 }
-
-
-
